@@ -19,7 +19,7 @@ def delta_phi(ticks: int, prev_ticks: int, resolution: int) -> Tuple[float, floa
     alpha = 2 * np.pi / resolution
     dphi = ticks * alpha
     # ---
-    return dphi, ticks + prev_ticks
+    return dphi, ticks
 
 
 def estimate_pose(
